@@ -19,17 +19,12 @@ VALUES
 
 DELETE FROM world.city WHERE ID=2933;
 
-SELECT*FROM world.city WHERE	
- Population>=(SELECT Population FROM world.city WHERE ID=2932) and CountryCode='POL';
+SELECT*FROM world.city WHERE CountryCode ='POL' ORDER BY Population DESC LIMIT 5;
  
-SELECT*FROM world.city WHERE Population <(Select Population FROM world.city WHERE Name='Bytom') and Population>	
-(Select Population FROM world.city WHERE Name='Rybnik') and CountryCode='POL' and District='Slaskie';
+SELECT*FROM world.city WHERE CountryCode='POL' and District='Slaskie' and Population>150000 ORDER BY Population LIMIT 3;
 
-SELECT*FROM world.city WHERE District='Slaskie';
-
-Select*FROM world.country WHERE LifeExpectancy>81;
+Select*FROM world.country ORDER BY LifeExpectancy DESC LIMIT 3;
 
 SELECT SUM(Population) FROM world.country WHERE Continent='Europe';
 
 SELECT*FROM world.country WHERE IndepYear=1918;
-
