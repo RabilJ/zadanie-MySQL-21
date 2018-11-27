@@ -1,0 +1,19 @@
+Projekt Biblioteka,
+dependencies->mysql
+workbench->schema biblioteka->tabela biblioteka ->id,title,author, year, isbn
+klasa Book w IntelliJ identyczna do kolumn z sql
+BookDao z metodami jak na githubie
+Klasa z mainem 
+switch
+1 - dodaj DAO.add();
+
+2 - wyszuaj DAO.search();
+Na podstawie czego chcesz wyszukaæ?
+
+3 - usun DAO.delete();
+
+----
+ze Springiem
+Book - @Component
+BookDAO - @Repository
+BookController - @Controller
